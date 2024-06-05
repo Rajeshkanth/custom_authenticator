@@ -52,12 +52,17 @@ Add a new execution with the type Custom Authenticator.
 Configure the custom authenticator:
 
 Click on Actions -> Add Execution.
+
 Select Custom Authenticator from the list.
+
 Click Save.
-Set up the execution:
+
+## Set up the execution:
 
 Click Actions -> Config.
+
 Configure the authenticator as needed.
+
 Click Save.
 
 ## Usage
