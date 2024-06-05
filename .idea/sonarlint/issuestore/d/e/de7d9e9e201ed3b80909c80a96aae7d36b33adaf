@@ -1,15 +1,0 @@
-
-œ
-java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(  ìÿýÿÿÿÿ
-œ
-java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—µ±þýÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(¹‰¸®ÿÿÿÿÿ
-3
-java:S2119<"Save and re-use this "Random".(¼ÝÅf
-I
-java:S1172G"3Remove this unused method parameter "mobileNumber".(áùëó
-E	java:S106H"+Replace this use of System.out by a logger.(œØ‚°úÿÿÿÿ
-F
-java:S11446"0Remove this unused private "generateOTP" method.(ƒ³®ç
-B
-java:S1144G",Remove this unused private "sendOTP" method.(áùëó
