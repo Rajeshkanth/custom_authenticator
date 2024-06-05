@@ -38,6 +38,14 @@ Copy the generated JAR file from the target directory to the providers directory
 
 cp target/custom-authenticator.jar /opt/keycloak/providers/
 
+`or`
+
+## Building and deploying the jar files
+
+`./script.sh`
+
+this command will automatically run the `mvn clean package` and will move the jar files in the provider folder in target destination
+
 ## Restart the Keycloak server:
 
 /opt/keycloak/bin/kc.sh stop
@@ -47,7 +55,7 @@ cp target/custom-authenticator.jar /opt/keycloak/providers/
 ## Configuration
 Log in to the Keycloak admin console:
 
-Open your web browser and go to http://<your-keycloak-domain>/auth/admin/ and log in with your admin credentials.
+Open your web browser and go to `http://<your-keycloak-domain>/auth/admin/` and log in with your admin credentials.
 
 Navigate to the appropriate realm:
 
@@ -55,19 +63,19 @@ Select the realm where you want to configure the custom authenticator.
 
 ## Create an Authentication Flow:
 
-Go to Authentication -> Flows.
+Go to Authentication -> `Flows`.
 
-Click Add to create a new flow or select an existing flow to modify.
+Click `Add` to create a new flow or select an existing flow to modify.
 
 Add a new execution with the type Custom Authenticator.
 
 Configure the custom authenticator:
 
-Click on Actions -> Add Execution.
+Click on Actions -> `Add Execution`.
 
 Select Custom Authenticator from the list.
 
-Click Save.
+Click `Save`.
 
 ## Set up the execution:
 
@@ -108,11 +116,13 @@ Modify the existing authenticator or add new ones in the src/main/java directory
 
 ## Build the project:
 
-mvn clean install
+`mvn clean install` or `mvn clean package`
 
 Deploy and test:
 
 Deploy the updated JAR file to your Keycloak instance and test your changes.
+
+By running either `mvn clean packge` or `./script.sh` to build the jar file.
 
 ## Contributing
 We welcome contributions to this project. Please open an issue or submit a pull request on GitHub if you have any improvements or bug fixes.
