@@ -10,6 +10,7 @@ import org.keycloak.authentication.AuthenticationFlowError;
 import java.util.Random;
 
 public class OtpUtils {
+
     private OtpUtils() {
         // intentionally set to empty
     }
