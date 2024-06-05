@@ -33,7 +33,6 @@ public class OtpUtils {
 
     public static boolean sendOTP(String mobileNumber, String otp, AuthenticationFlowContext context, String form) throws TwilioException {
         try {
-            System.out.println(ACCOUNT_SID);
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             String messageBody = "Your OTP for Easy Transfer login is: " + otp;
             Message.creator(
